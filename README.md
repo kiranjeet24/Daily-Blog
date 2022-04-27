@@ -102,14 +102,15 @@ The key difference in Frappe compared to other frameworks is that meta-data is a
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
-
 **Date : 11-Feb-2022** 
 ## Introduction to selenium
 #### what is selenium?
 - Selenium WebDriver is a web framework that permits you to execute cross-browser tests. This tool is used for automating web-based application testing to verify that   it performs expectedly. Selenium WebDriver allows you to choose a programming language to create test scripts.
 - Selenium WebDriver supports most of the popular programming languages used by developers and testers, namely – Python, Java, C#, Ruby, and more. It supports popular   operating systems such as Windows, Mac OS, Linux, and Solaris. Mozilla Firefox is the default web browser of Selenium WebDriver.
 - I opted for Python language for testing Selenium. It has far less verbose and easy to use than any other programming language. The Python APIs empower you to connect   with the browser through Selenium.
-- 
+
+<br>
+
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 11-Feb-2022** 
 ## Installing and configuring to Ldap
