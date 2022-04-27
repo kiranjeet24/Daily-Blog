@@ -184,7 +184,7 @@ LDAP Account Manager has a number of dependencies, namely:
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 15-Feb-2022** 
-#### Adding Users and Groups in Ldap Account Manager(LAM)
+## Adding Users and Groups in Ldap Account Manager(LAM)
 - Login with the account admin to LAM dashboard to start managing user accounts and groups.
 - Users and Groups links to manage user accounts and groups.
 - To create a user entry
@@ -203,7 +203,7 @@ LDAP Account Manager has a number of dependencies, namely:
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 16-Feb-2022** 
-#### Lets start automation with selenium in python
+## Automation with selenium in python
 - The easiest way to install Selenium on a Python environment is through the installer pip.
   pip install selenium
 - Once you have completed the pre-requisites section, you are ready to start your first test in Selenium with the Python programming language!
