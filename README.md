@@ -181,6 +181,7 @@ LDAP Account Manager has a number of dependencies, namely:
 - When done with the settings, click the Save button at the bottom of the page.
 
 <br>
+
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 15-Feb-2022** 
 #### Adding Users and Groups in Ldap Account Manager(LAM)
@@ -196,7 +197,8 @@ LDAP Account Manager has a number of dependencies, namely:
 - Note that at a minimum, you must specify the following user information when creating a new user entry:
   - surname or last name
   - full name
-  - user ID 
+  - user ID
+   
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
