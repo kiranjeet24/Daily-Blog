@@ -205,7 +205,9 @@ LDAP Account Manager has a number of dependencies, namely:
 **Date : 16-Feb-2022** 
 ## Automation with selenium in python
 - The easiest way to install Selenium on a Python environment is through the installer pip.
-  pip install selenium
+  ```python
+    pip install selenium
+  ```
 - Once you have completed the pre-requisites section, you are ready to start your first test in Selenium with the Python programming language!
   1. First import the webdriver and Keys classes from Selenium. 
   ```
