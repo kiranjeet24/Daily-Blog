@@ -120,7 +120,7 @@ The key difference in Frappe compared to other frameworks is that meta-data is a
 - Once the update completes, install LDAP with the command sudo apt-get install slapd ldap-utils.
 - Allow the installation to complete.
 
-####Configuring LDAP
+#### Configuring LDAP
 To begin the process of configuring LDAP, issue the command sudo dpkg-reconfigure slapd. You’ll be presented with a number of options to configure. These options are:
 - Omit OpenLDAP Server Configuration: Select No
 - DNS Domain Name: This creates the base structure for your directory path (the configuration window, Figure A, explains this).
@@ -141,7 +141,7 @@ To begin the process of configuring LDAP, issue the command sudo dpkg-reconfigur
 - LDAP Account Manager (LAM) is a web frontend for managing entries (e.g. users, groups, DHCP settings) stored in an LDAP directory. The LDAP Account Manager tool was designed to make LDAP management as easy as possible for the user.
 - LAM ease administration of LDAP entries by abstracting the technical details of LDAP and allowing administrators and users without technical background to manage LDAP server. If needed, experienced users can directly edit LDAP entries via the integrated LDAP browser.
 
-####LDAP Account Manager Dependencies
+#### LDAP Account Manager Dependencies
 LDAP Account Manager has a number of dependencies, namely:
 - OpenLDAP server: Install and configure OpenLDAP on Ubuntu
 - PHP and Apache web server
@@ -172,7 +172,28 @@ LDAP Account Manager has a number of dependencies, namely:
 - This will ask you for LAM Profile name Password:
   ![image](https://user-images.githubusercontent.com/52277024/165566118-170e1f4a-6b24-4ec6-85d4-e2de9437fd2e.png)
 - The first thing to change is Profile Password, this is at the end of General Settings page.
--Next is to set LDAP Server address and Tree suffix. Mine looks like below, you need to use your Domain components as set in server hostname.
+- Next is to set LDAP Server address and Tree suffix. Mine looks like below, you need to use your Domain components as set in server hostname.
+- You can also enable other available account types you wish to use. User and Group modules can be enabled and disabled on “Modules” page. 
+- When done with the settings, click the Save button at the bottom of the page.
 
 <br>
 <!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 14-Feb-2022** 
+#### Adding Users and Groups in Ldap Account Manager(LAM)
+- Login with the account admin to LAM dashboard to start managing user accounts and groups.
+- Users and Groups links to manage user accounts and groups.
+- To create a user entry
+  - Access the Administration Server and choose the Users and Groups tab.
+  - Click New User.
+  - Select the LDAP directory service from the Select Directory Service drop-down list, and click Select.
+  - Add the required information to the page that displays.
+  - For more information see Directory Server User Entries.
+  - Click Create User or Create and Edit User.
+- Note that at a minimum, you must specify the following user information when creating a new user entry:
+  - surname or last name
+  - full name
+  - user ID 
+<br>
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 14-Feb-2022** 
+#### Adding Users and Groups in Ldap Account Manager(LAM)
