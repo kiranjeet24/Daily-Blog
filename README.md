@@ -1,8 +1,8 @@
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 1-Feb-2022** 
-<h3 align='center'>Introduction to Linux & Installing Ubuntu</h3>
+## Introduction to Linux & Installing Ubuntu
 
-<p align="justify">Linux is an open-source operating system like other operating systems such as Microsoft Windows, Apple Mac OS, iOS, Google android, etc. An operating system is a software that enables the communication between computer hardware and software. It conveys input to get processed by the processor and brings output to the hardware to display it. This is the basic function of an operating system.</p>
+Linux is an open-source operating system like other operating systems such as Microsoft Windows, Apple Mac OS, iOS, Google android, etc. An operating system is a software that enables the communication between computer hardware and software. It conveys input to get processed by the processor and brings output to the hardware to display it. This is the basic function of an operating system.
 
 - Download the linux distribution of your choice.
 - Creating Boot pendrive using rufus.exe in windows.
@@ -16,9 +16,9 @@
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 2-Feb-2022** 
-<h3 align='center'>Introduction to LAMP Stack</h3>
+## Introduction to LAMP Stack
 
-<p align="justify">The LAMP stack is a popular open-source solution stack used primarily in web development.LAMP consists of four components necessary to establish a fully functional web development environment. The first letters of the components' names make up the LAMP acronym:</p>
+The LAMP stack is a popular open-source solution stack used primarily in web development.LAMP consists of four components necessary to establish a fully functional web development environment. The first letters of the components' names make up the LAMP acronym:
 
 - Linux is an operating system used to run the rest of the components.
 - Apache HTTP Server is a web server software used to serve static web pages.
@@ -30,9 +30,9 @@
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 3-Feb-2022**
-<h3 align='center'>Run Cgi Script</h3>
+## Run Cgi Script
 
-<p align="justify">CGI stands for Common Gateway Interface. CGI defines a standard way in which information may be passed to and from the browser and server. Any program or script that can process information according to the CGI specification can, in theory, be used to code a CGI script.</p>
+CGI stands for Common Gateway Interface. CGI defines a standard way in which information may be passed to and from the browser and server. Any program or script that can process information according to the CGI specification can, in theory, be used to code a CGI script.
 
 - Create a cgi scirpt.
 - Run it on Localhost using Apache Server.
@@ -40,7 +40,7 @@
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 4-Feb-2022**
-<h3 align='center'>Image to video</h3>
+## Image to video
 
 - Create a python Script.
 - install pip,Image-MagicK on your system.
@@ -51,18 +51,18 @@
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 5-Feb-2022**
-<h3 align='center'>Introduction to frappe</h3>
+## Introduction to frappe
 
-<p align="justify">Frappe, pronounced fra-pay, is a full stack, batteries-included, web framework written in Python and Javascript with MariaDB as the database. It is the framework which powers ERPNext, is pretty generic and can be used to build database driven apps.</p>
+Frappe, pronounced fra-pay, is a full stack, batteries-included, web framework written in Python and Javascript with MariaDB as the database. It is the framework which powers ERPNext, is pretty generic and can be used to build database driven apps.
 #### Why Frappe?
-<p align="justify">The key difference in Frappe compared to other frameworks is that meta-data is also treated as data. This enables you to build front-ends very easily. We believe in a monolithic architecture, so Frappe comes with almost everything you need to build a modern web application. It has a full featured Admin UI called the Desk that handles forms, navigation, lists, menus, permissions, file attachment and much more out of the box.</p>
+The key difference in Frappe compared to other frameworks is that meta-data is also treated as data. This enables you to build front-ends very easily. We believe in a monolithic architecture, so Frappe comes with almost everything you need to build a modern web application. It has a full featured Admin UI called the Desk that handles forms, navigation, lists, menus, permissions, file attachment and much more out of the box.
 
 - Install Frappe-bench and its required tool. For more info [Click here](https://frappeframework.com/docs/v13/user/en/installation).
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 7-Feb-2022**
-<h3 align='center'>Creating App and Site & run on local server in Frappe</h3>
+## Creating App and Site & run on local server in Frappe
 
 - Start Bench in one Terminal.
 - In Second Terminal.
@@ -73,7 +73,7 @@
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 8-Feb-2022**
-<h3 align='center'>Introduction to Github Pages</h3>
+## Introduction to Github Pages
 
 - Getting Information What is GitHub Pages.
 - Create a New Repository on GitHub.
@@ -84,7 +84,7 @@
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 9-Feb-2022** 
-<h3 align='center'>Introduction to Reveal.JS, Pandoc, Use of Markdown in Reveal.js</h3>
+## Introduction to Reveal.JS, Pandoc, Use of Markdown in Reveal.js
 
 - What is Reveal.JS, Pandoc, Use Markdown in Reveal.js.
 - Creating Presentation in Reveal.JS using Markdown only.
