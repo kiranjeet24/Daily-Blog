@@ -206,9 +206,17 @@ LDAP Account Manager has a number of dependencies, namely:
   pip install selenium
 - Once you have completed the pre-requisites section, you are ready to start your first test in Selenium with the Python programming language!
   1. First import the webdriver and Keys classes from Selenium. 
-  
+  ```
      from selenium import webdriver
      from selenium.webdriver.common.keys import Keys 
-  
+  ```
+  2. Next, create an instance of Chrome with the path of the driver that you downloaded through the websites of the respective browser. 
+  ```
+  driver = webdriver.Chrome('./chromedriver')
+  ```
+  3. 3. Next, use the .get() method of the driver to load a website.
+  ```
+  driver.get("https://www.python.org")
+  ```
  <br>
 <!----------------------------------------------------------------------------------------------------------------------------->
