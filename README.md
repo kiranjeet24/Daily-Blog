@@ -93,12 +93,86 @@ The key difference in Frappe compared to other frameworks is that meta-data is a
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
-<!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 10-Feb-2022** 
 ## Introduction to Ldap
 
-- LDAP stands for Lightweight Directory Access Protocol. It is an industry standard application protocol (RFC here) that serves to define an interface or   language with which client applications can talk to a directory service (such as OpenLDAP, Active Directory etc.) to query or modify the information in   the directory.
+#### What is Ldap?
+- LDAP stands for Lightweight Directory Access Protocol. It is an industry standard application protocol (RFC here) that serves to define an interface or language with which client applications can talk to a directory service (such as OpenLDAP, Active Directory etc.) to query or modify the information in   the directory.
 - An LDAP directory (or server) typically stores information about users, user credentials, groups, user memberships and so on. Since they act as a         central repository for user information, they are commonly used for user authentication and authorization.
 <br>
 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 11-Feb-2022** 
+## Installing and configuring to Ldap
+- Open a terminal window.
+- Update apt with the command sudo apt-get update.
+- Once the update completes, install LDAP with the command sudo apt-get install slapd ldap-utils.
+- Allow the installation to complete.
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 11-Feb-2022** 
+## Installing and configuring to Ldap
+
+#### Installing Ldap
+- Open a terminal window.
+- Update apt with the command sudo apt-get update.
+- Once the update completes, install LDAP with the command sudo apt-get install slapd ldap-utils.
+- Allow the installation to complete.
+
+####Configuring LDAP
+To begin the process of configuring LDAP, issue the command sudo dpkg-reconfigure slapd. You’ll be presented with a number of options to configure. These options are:
+- Omit OpenLDAP Server Configuration: Select No
+- DNS Domain Name: This creates the base structure for your directory path (the configuration window, Figure A, explains this).
+- Organization Name: The name to be used as the base DN for your LDAP directory.
+- Administrator Password: The password to be used for your LDAP admin user.
+- Database Backend: Select HDB
+- Remove The Database When Slapd Is Purged: Select No
+- Move Old Database: Select Yes
+- Allow LDAPv2 Protocol: Select No
+![image](https://user-images.githubusercontent.com/52277024/165558927-673b1e4f-e403-4efc-b57c-76d93f47705b.png)
+
+<br>
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 12-Feb-2022** 
+## Introduction to Ldap Account Manager (LAM)
+
+#### What is Ldap account manager?
+- LDAP Account Manager (LAM) is a web frontend for managing entries (e.g. users, groups, DHCP settings) stored in an LDAP directory. The LDAP Account Manager tool was designed to make LDAP management as easy as possible for the user.
+- LAM ease administration of LDAP entries by abstracting the technical details of LDAP and allowing administrators and users without technical background to manage LDAP server. If needed, experienced users can directly edit LDAP entries via the integrated LDAP browser.
+
+####LDAP Account Manager Dependencies
+LDAP Account Manager has a number of dependencies, namely:
+- OpenLDAP server: Install and configure OpenLDAP on Ubuntu
+- PHP and Apache web server
+- A user account with sudo privileges
+
+<br>
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 13-Feb-2022** 
+## Installing and configuring to Ldap Account Manager (LAM)
+
+#### Installing Ldap account manager
+- Open a terminal window.
+- Update apt with the command sudo apt-get update.
+- Install OpenLDAP Server
+- Once the update completes, install LDAP with the command sudo apt-get install slapd ldap-utils.
+- Install Apache Web server & PHP
+- Install PHP and Apache web server by running the commands below on your terminal
+  - sudo apt -y install apache2 php php-cgi libapache2-mod-php php-mbstring php-common php-pear
+- Then enable php-cgi PHP extension.
+- Install LDAP Account Manager    
+- LDAP Account Manager package is available on Ubuntu repositories, install it with the command:sudo apt -y install ldap-account-manager
+- For futher installation or info go to (https://computingforgeeks.com/install-and-configure-ldap-account-manager-on-ubuntu/)
+
+#### Configuring Ldap Account Manager(LAM)
+- Access  LDAP Account Manager web interface from a trusted machine network on:http://(server’s hostname or IP address)/lam
+- The LDAP Account Manager Login form will be shown. We need to set our LDAP server profile by clicking on[LAM configuration] at the upper right corner.
+  Then click on,Edit server profiles
+- This will ask you for LAM Profile name Password:
+  ![image](https://user-images.githubusercontent.com/52277024/165566118-170e1f4a-6b24-4ec6-85d4-e2de9437fd2e.png)
+- The first thing to change is Profile Password, this is at the end of General Settings page.
+-Next is to set LDAP Server address and Tree suffix. Mine looks like below, you need to use your Domain components as set in server hostname.
+
+<br>
 <!----------------------------------------------------------------------------------------------------------------------------->
