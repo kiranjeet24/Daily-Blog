@@ -112,7 +112,7 @@ The key difference in Frappe compared to other frameworks is that meta-data is a
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 11-Feb-2022** 
+**Date : 12-Feb-2022** 
 ## Installing and configuring to Ldap
 
 #### Installing Ldap
@@ -133,8 +133,9 @@ To begin the process of configuring LDAP, issue the command sudo dpkg-reconfigur
 - Allow LDAPv2 Protocol: Select No
 
 <br>
+
 <!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 12-Feb-2022** 
+**Date : 13-Feb-2022** 
 ## Introduction to Ldap Account Manager (LAM)
 
 #### What is Ldap account manager?
@@ -148,8 +149,9 @@ LDAP Account Manager has a number of dependencies, namely:
 - A user account with sudo privileges
 
 <br>
+
 <!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 13-Feb-2022** 
+**Date : 14-Feb-2022** 
 ## Installing and configuring to Ldap Account Manager (LAM)
 
 #### Installing Ldap account manager
@@ -177,7 +179,7 @@ LDAP Account Manager has a number of dependencies, namely:
 
 <br>
 <!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 14-Feb-2022** 
+**Date : 15-Feb-2022** 
 #### Adding Users and Groups in Ldap Account Manager(LAM)
 - Login with the account admin to LAM dashboard to start managing user accounts and groups.
 - Users and Groups links to manage user accounts and groups.
@@ -194,7 +196,7 @@ LDAP Account Manager has a number of dependencies, namely:
   - user ID 
 <br>
 <!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 15-Feb-2022** 
+**Date : 16-Feb-2022** 
 #### Lets start automation with selenium in python
 - The easiest way to install Selenium on a Python environment is through the installer pip.
   pip install selenium
