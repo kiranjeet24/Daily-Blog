@@ -212,11 +212,11 @@ LDAP Account Manager has a number of dependencies, namely:
   ```
   2. Next, create an instance of Chrome with the path of the driver that you downloaded through the websites of the respective browser. 
   ```
-  driver = webdriver.Chrome('./chromedriver')
+     driver = webdriver.Chrome('./chromedriver')
   ```
   3. 3. Next, use the .get() method of the driver to load a website.
   ```
-  driver.get("https://www.python.org")
+     driver.get("https://www.python.org")
   ```
  <br>
 <!----------------------------------------------------------------------------------------------------------------------------->
