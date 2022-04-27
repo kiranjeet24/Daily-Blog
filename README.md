@@ -102,14 +102,14 @@ The key difference in Frappe compared to other frameworks is that meta-data is a
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 11-Feb-2022** 
-## Installing and configuring to Ldap
-- Open a terminal window.
-- Update apt with the command sudo apt-get update.
-- Once the update completes, install LDAP with the command sudo apt-get install slapd ldap-utils.
-- Allow the installation to complete.
-<br>
 
+**Date : 11-Feb-2022** 
+## Introduction to selenium
+#### what is selenium?
+- Selenium WebDriver is a web framework that permits you to execute cross-browser tests. This tool is used for automating web-based application testing to verify that   it performs expectedly. Selenium WebDriver allows you to choose a programming language to create test scripts.
+- Selenium WebDriver supports most of the popular programming languages used by developers and testers, namely – Python, Java, C#, Ruby, and more. It supports popular   operating systems such as Windows, Mac OS, Linux, and Solaris. Mozilla Firefox is the default web browser of Selenium WebDriver.
+- I opted for Python language for testing Selenium. It has far less verbose and easy to use than any other programming language. The Python APIs empower you to connect   with the browser through Selenium.
+- 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 11-Feb-2022** 
 ## Installing and configuring to Ldap
@@ -130,7 +130,6 @@ To begin the process of configuring LDAP, issue the command sudo dpkg-reconfigur
 - Remove The Database When Slapd Is Purged: Select No
 - Move Old Database: Select Yes
 - Allow LDAPv2 Protocol: Select No
-![image](https://user-images.githubusercontent.com/52277024/165558927-673b1e4f-e403-4efc-b57c-76d93f47705b.png)
 
 <br>
 <!----------------------------------------------------------------------------------------------------------------------------->
@@ -170,7 +169,6 @@ LDAP Account Manager has a number of dependencies, namely:
 - The LDAP Account Manager Login form will be shown. We need to set our LDAP server profile by clicking on[LAM configuration] at the upper right corner.
   Then click on,Edit server profiles
 - This will ask you for LAM Profile name Password:
-  ![image](https://user-images.githubusercontent.com/52277024/165566118-170e1f4a-6b24-4ec6-85d4-e2de9437fd2e.png)
 - The first thing to change is Profile Password, this is at the end of General Settings page.
 - Next is to set LDAP Server address and Tree suffix. Mine looks like below, you need to use your Domain components as set in server hostname.
 - You can also enable other available account types you wish to use. User and Group modules can be enabled and disabled on “Modules” page. 
@@ -195,5 +193,14 @@ LDAP Account Manager has a number of dependencies, namely:
   - user ID 
 <br>
 <!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 14-Feb-2022** 
-#### Adding Users and Groups in Ldap Account Manager(LAM)
+**Date : 15-Feb-2022** 
+#### Lets start automation with selenium in python
+- The easiest way to install Selenium on a Python environment is through the installer pip.
+  pip install selenium
+- Once you have completed the pre-requisites section, you are ready to start your first test in Selenium with the Python programming language!
+  1. First import the webdriver and Keys classes from Selenium. 
+  ~~~
+     from selenium import webdriver
+     from selenium.webdriver.common.keys import Keys 
+  ~~~
+ 
