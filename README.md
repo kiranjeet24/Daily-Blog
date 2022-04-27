@@ -118,7 +118,10 @@ The key difference in Frappe compared to other frameworks is that meta-data is a
 #### Installing Ldap
 - Open a terminal window.
 - Update apt with the command sudo apt-get update.
-- Once the update completes, install LDAP with the command sudo apt-get install slapd ldap-utils.
+- Once the update completes, install LDAP with the command
+ ```
+ sudo apt-get install slapd ldap-utils.
+ ```
 - Allow the installation to complete.
 
 #### Configuring LDAP
@@ -195,6 +198,7 @@ LDAP Account Manager has a number of dependencies, namely:
   - full name
   - user ID 
 <br>
+
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 16-Feb-2022** 
 #### Lets start automation with selenium in python
