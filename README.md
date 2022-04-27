@@ -93,3 +93,12 @@ The key difference in Frappe compared to other frameworks is that meta-data is a
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 10-Feb-2022** 
+## Introduction to Ldap
+
+- LDAP stands for Lightweight Directory Access Protocol. It is an industry standard application protocol (RFC here) that serves to define an interface or   language with which client applications can talk to a directory service (such as OpenLDAP, Active Directory etc.) to query or modify the information in   the directory.
+ -An LDAP directory (or server) typically stores information about users, user credentials, groups, user memberships and so on. Since they act as a         central repository for user information, they are commonly used for user authentication and authorization.
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
