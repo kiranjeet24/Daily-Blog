@@ -225,17 +225,17 @@ LDAP Account Manager has a number of dependencies, namely:
      driver.get("https://www.python.org")
      driver.maximize_window()
   ```
-  ## Locating elements in a webpage with selenium
-  - Selenium provides the following methods to locate elements in a page:
-    -find_element
-    -find_elements
+ ## Locating elements in a webpage with selenium
+- Selenium provides the following methods to locate elements in a page:
+   -find_element
+   -find_elements
     
- - First import By class:
+- First import By class:
  ```
    from selenium.webdriver.common.by import By
  ```
- - These are the attributes available for By class:
-   ```
+- These are the attributes available for By class:
+   ```py
    ID = "id"
    XPATH = "xpath"
    LINK_TEXT = "link text"
