@@ -164,7 +164,9 @@ LDAP Account Manager has a number of dependencies, namely:
 - Once the update completes, install LDAP with the command sudo apt-get install slapd ldap-utils.
 - Install Apache Web server & PHP
 - Install PHP and Apache web server by running the commands below on your terminal
-  - sudo apt -y install apache2 php php-cgi libapache2-mod-php php-mbstring php-common php-pear
+```
+   sudo apt -y install apache2 php php-cgi libapache2-mod-php php-mbstring php-common php-pear
+```
 - Then enable php-cgi PHP extension.
 - Install LDAP Account Manager    
 - LDAP Account Manager package is available on Ubuntu repositories, install it with the command:sudo apt -y install ldap-account-manager
@@ -209,18 +211,39 @@ LDAP Account Manager has a number of dependencies, namely:
     pip install selenium
   ```
 - Once you have completed the pre-requisites section, you are ready to start your first test in Selenium with the Python programming language!
-  1. First import the webdriver and Keys classes from Selenium. 
+  1. First import the webdriver from Selenium, the following import is for chrome browser. 
   ```py
-     from selenium import webdriver
-     from selenium.webdriver.common.keys import Keys 
+     from selenium.webdriver.chrome.service import Service
   ```
-  2. Next, create an instance of Chrome with the path of the driver that you downloaded through the websites of the respective browser. 
+  2. Next,create an instance of Chrome with the path of the driver that you downloaded through the websites of the respective browser. 
   ```py
-     driver = webdriver.Chrome('./chromedriver')
+     s = Service("/usr/bin/chromedriver")
+     driver = webdriver.Chrome(service=s)
   ```
-  3. Next, use the .get() method of the driver to load a website.
+  3. Next, use the .get() method of the driver to load a website and for maximising the window use the maximize_window(). 
   ```py
      driver.get("https://www.python.org")
+     driver.maximize_window()
   ```
+  ## Locating elements in a webpage with selenium
+  - Selenium provides the following methods to locate elements in a page:
+    -find_element
+    -find_elements
+    
+ - First import By class:
+ ```
+   from selenium.webdriver.common.by import By
+ ```
+ - These are the attributes available for By class:
+   ```
+   ID = "id"
+   XPATH = "xpath"
+   LINK_TEXT = "link text"
+   PARTIAL_LINK_TEXT = "partial link text"
+   NAME = "name"
+   TAG_NAME = "tag name"
+   CLASS_NAME = "class name"
+   CSS_SELECTOR = "css selector"
+   ``` 
  <br>
 <!----------------------------------------------------------------------------------------------------------------------------->
