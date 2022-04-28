@@ -252,7 +252,7 @@ LDAP Account Manager has a number of dependencies, namely:
  ```
  <br>
 <!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 16-Feb-2022** 
+**Date : 17-Feb-2022** 
 #### Automation with selenium in python
 ## Using waits in selenium
    When a page is loaded by the browser, the elements within that page may load at different time intervals. This makes locating elements difficult: if an element is not yet present in the DOM, a locate function will raise an ElementNotVisibleException exception. Using waits, we can solve this issue. Waiting provides some slack between actions performed - mostly locating an element or any other operation with the element.
