@@ -227,8 +227,8 @@ LDAP Account Manager has a number of dependencies, namely:
   ```
  ## Locating elements in a webpage with selenium
 - Selenium provides the following methods to locate elements in a page:
-   -find_element
-   -find_elements
+  - find_element
+  - find_elements
     
 - First import By class:
  ```
@@ -244,6 +244,11 @@ LDAP Account Manager has a number of dependencies, namely:
    TAG_NAME = "tag name"
    CLASS_NAME = "class name"
    CSS_SELECTOR = "css selector"
-   ``` 
+   ```
+ - Example code for finding element:-
+ ```
+  driver.find_element(By.XPATH, '//button[text()="Some text"]')
+  driver.find_elements(By.XPATH, '//button')
+ ```
  <br>
 <!----------------------------------------------------------------------------------------------------------------------------->
