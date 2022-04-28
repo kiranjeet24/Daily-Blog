@@ -251,6 +251,7 @@ LDAP Account Manager has a number of dependencies, namely:
   driver.find_elements(By.XPATH, '//button')
  ```
  <br>
+ 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 17-Feb-2022** 
 #### Automation with selenium in python
@@ -267,5 +268,7 @@ LDAP Account Manager has a number of dependencies, namely:
 - For more information refer to links-
  - https://www.geeksforgeeks.org/selenium-python-tutorial/
  - https://selenium-python.readthedocs.io/getting-started.html  
+ 
  <br>
+ 
 <!----------------------------------------------------------------------------------------------------------------------------->
