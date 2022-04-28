@@ -204,7 +204,7 @@ LDAP Account Manager has a number of dependencies, namely:
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 16-Feb-2022** 
+**Date : 17-Feb-2022** 
 ## Automation with selenium in python
 - The easiest way to install Selenium on a Python environment is through the installer pip.
   ```py
@@ -253,22 +253,23 @@ LDAP Account Manager has a number of dependencies, namely:
  <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 17-Feb-2022** 
+**Date : 18-Feb-2022** 
 #### Automation with selenium in python
 ## Using waits in selenium
    When a page is loaded by the browser, the elements within that page may load at different time intervals. This makes locating elements difficult: if an element is not yet present in the DOM, a locate function will raise an ElementNotVisibleException exception. Using waits, we can solve this issue. Waiting provides some slack between actions performed - mostly locating an element or any other operation with the element.
 - Selenium Webdriver provides two types of waits:-
- - Explicit waits- An explicit wait makes WebDriver wait for a certain condition to occur before proceeding further with execution. 
- - Implicit waits- An implicit wait makes WebDriver poll the DOM for a certain amount of time when trying to locate an element.
+  - Explicit waits- An explicit wait makes WebDriver wait for a certain condition to occur before proceeding further with execution. 
+  - Implicit waits- An implicit wait makes WebDriver poll the DOM for a certain amount of time when trying to locate an element.
 ## Various methods can used with an element in Selenium Python 
- - send_keys() - send_keys method is used to send text to any field, such as input field of a form or even to anchor tag paragraph, etc.
- - click() - click method is used to click on any element, such as an anchor tag, a link, etc.
- - submit() - submit method is used to submit a form after you have sent data to a form.
- - tag_name - tag_name method is used to get name of tag you are referring to.
+  - send_keys() - send_keys method is used to send text to any field, such as input field of a form or even to anchor tag paragraph, etc.
+  - click() - click method is used to click on any element, such as an anchor tag, a link, etc.
+  - submit() - submit method is used to submit a form after you have sent data to a form.
+  - tag_name - tag_name method is used to get name of tag you are referring to.
 - For more information refer to links-
- - https://www.geeksforgeeks.org/selenium-python-tutorial/
- - https://selenium-python.readthedocs.io/getting-started.html  
+  - https://www.geeksforgeeks.org/selenium-python-tutorial/
+  - https://selenium-python.readthedocs.io/getting-started.html  
  
  <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
+*Date : 19-Feb-2022**  
