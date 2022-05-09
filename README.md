@@ -273,3 +273,272 @@ LDAP Account Manager has a number of dependencies, namely:
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 *Date : 19-Feb-2022**  
+## Creating Apps in Frappe
+Any kind of applications can be created on frappe wich give more controll and flexible use. 
+To create a new app  run command <br>
+- bench new-app library_management
+
+The app will create certains fille in the app folder the whole structure is 
+- **library_management**: This directory will contain all the source code for your app
+- **public**: Store static files that will be served from Nginx in production
+- **templates**: Jinja templates used to render web views
+- **www**: Web pages that are served based on their directory path
+- **library_management**: Default Module bootstrapped with app
+- **modules.txt**: List of modules defined in the app
+- **patches.txt**: Patch entries for database migrations
+- **hooks.py**: Hooks used to extend or intercept standard functionality provided by the framework
+- **requirements.txt**: List of Python packages that will be installed when you install this a
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 21-Feb-2022** 
+## Introduction to DocTypes in Frappe:
+
+A DocType is the core building block of any application based on the Frappe Framework. It describes the Model and the View of your data. It contains what fields are stored for your data, and how they behave with respect to each other. It contains information about how your data is named. It also enables rich Object Relational Mapper (ORM) pattern which we will discuss later in this guide. When you create a DocType, a JSON object is created which in turn creates a database table.
+
+To enable rapid application development, Frappe Framework follows some standard conventions.
+
+1. DocType is always singular. If you want to store a list of articles in the database, you should name the doctype Article.
+2. Table names are prefixed with tab. So the table name for Article doctype is tabArticle.
+3. The standard way to create a DocType is by typing new doctype in the search bar in the Desk.
+
+A DocType not only stores fields, but also other information about how your data behaves in the system. We call this Meta. Since this meta-data is also stored in a database table, it makes it easy to change meta-data on the fly without writing much code.
+
+Before we can create DocTypes, we need to enable developer mode on our bench. This will enable boilerplate creation when we create doctypes and we can track them into version control with our app.
+
+##### bench set-config -g developer_mode true
+##### bench start
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 22-Feb-2022** 
+### Creating Article DocType for LMS
+
+Go To DocType list and here we can create a new doctype named article :
+- Enter the Name for the docType
+- Then We select a Module Named LMS which we have created earlier or we can create a new module.
+- Now we require fileds for the doctype we created the required below fields in the doctype:
+  - Article Name (type = data , and we set it as Mandatory )
+  - Image (type = Attach Image )
+  - Author ( Data )
+  - Description(Text Editor)
+  - ISBN(Data) 
+  - Status(Select , here we can add a drodown with options Issued and Available )
+  - Publisher( Data )
+we can also set the naming series for our artcles( as deafult it will use title as series )
+
+After adding the fields, click on Save.Our doctype is created and we can now Add data to our doctype.
+Now We can go to the article list and create " Article ".
+As we created new article the data wiil be pushed to the database in the form of tables and we can also check its data by giving command in the terminal 
+
+- bench bench --site library.test mariadb
+
+Here it will shoow all the database of a perticluar site.
+And we can check and update  our data using differnet sql commands by selecting differnet databasea and tables.
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+**Date : 23-Feb-2022** 
+### Adding functionality to the LMS
+
+A small example in order to provide the full name of the user we defined the following code in the 
+```
+class LibraryMember(Document):
+     #this method will run every time a document is saved
+       def before_save(self):
+          self.full_name = f'{self.first_name} {self.last_name or ""}'
+````
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+**Date : 24-Feb-2022** 
+###  Creating Different Doctypes with required for the LMS :
+
+### Library MemeberShip
+It will have the following fileds 
+
+- Library Member (Link, Mandatory)
+- Full Name (Data, Read Only)
+- From Date (Date)
+- To Date (Date)
+- Paid (Check)
+
+We will enable the Submitable Part So after save the one must have to submit it and after submit one cant make any changes to the document.
+
+
+Now for the functionality:
+
+import frappe<br/>
+from frappe.model.document import Document<br/>
+from frappe.model.docstatus import DocStatus<br/>
+
+```
+class LibraryMembership(Document):<br/>
+    # check before submitting this document<br/>
+    def before_submit(self):<br/>
+        exists = frappe.db.exists(
+            "Library Membership",
+            {
+                "library_member": self.library_member,
+                "docstatus": DocStatus.submitted(),
+                # check if the membership's end date is later than this membership's start date 
+                "to_date": (">", self.from_date),
+            },
+        )
+        if exists:
+            frappe.throw("There is an active membership for this member")
+```
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 25-Feb-2022** 
+##  Installing ERPNext Powered by Frappe on our bench: 
+
+- Pre requisite
+ - Frappe FrameWork 
+- For the perfect installation use this referance [Click here](https://github.com/D-codE-Hub/ERPNext-installation-Guide/blob/main/README.md). 
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 26-Feb-2022** 
+##  Introduction to Docker, Virtual Machine and ERPNext
+
+## Docker
+
+Docker is popular virtualization software that helps its users in developing, deploying, monitoring, and running applications in a Docker Container with all their dependencies (frameworks, libraries, etc.) to run an application in an efficient and bug-free manner.Docker Containers are Light-weight, Applications run in isolation,Occupies less space, Easily portable and highly secure, Short boot-up time.
+
+## Virtual Machine
+
+A Virtual Machine (VM) is a compute resource that uses software instead of a physical computer to run programs and deploy apps. One or more virtual “guest” machines run on a physical “host” machine.  Each virtual machine runs its own operating system and functions separately from the other VMs, even when they are all running on the same host. This means that, for example, a virtual MacOS virtual machine can run on a physical PC.
+
+- It can start only a single VM on a VMX.
+- It can run only a limited number of VMs on a system.
+- It can run multiple containers on a system.
+- It can start multiple containers at a time on the Docker engine.
+## ErpNext
+
+ERPNext is a full-featured business management solution that helps SMEs to record all their business transactions in a single system. With ERPNext, SMEs can make informed, fact-based, timely decisions to remain ahead in the competition. It serves as the backbone of a business adding strength, transparency, and control to your growing enterprise.
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 28-Feb-2022**
+##  Introduction to Jinja Templating
+
+A Jinja template is simply a text file. Jinja can generate any text-based format (HTML, XML, CSV, LaTeX, etc.). A Jinja template doesn’t need to have a specific extension: .html, .xml, or any other extension is just fine.
+
+A template contains variables and/or expressions, which get replaced with values when a template is rendered; and tags, which control the logic of the template. The template syntax is heavily inspired by Django and Python.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Webpage</title>
+</head>
+<body>
+    <ul id="navigation">
+    {% for item in navigation %}
+        <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
+    {% endfor %}
+    </ul>
+
+    <h1>My Webpage</h1>
+    {{ a_variable }}
+
+    {# a comment #}
+</body>
+</html>
+```
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 1-March-2022**
+## Education Domain in Erpnext
+
+ERPNext is a free and open-source integrated Enterprise Resource Planning software developed by Frappe Technologies Pvt. Ltd. and is built on MariaDB database system using Frappe, a Python based server-side framework. ERPNext is a generic ERP software used by manufacturers, distributors and services companies.
+
+The ERPNext Education Module helps to organizing your entire set-up. You can have your entire Student Database, Fee Structure, Staffing Information, Courses, Curriculum Which we used for the Project Nanakana Sahib Public School and Guru Nanak Dev Engineering College Ludhiana.
+
+In this Domain We have 
+- Basic Setup
+- Student
+- Admission
+- Fees 
+- Schedule
+- Learning Management System
+- Attendance 
+- Assessment
+- Tools
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+**Date : 2-March-2022**
+##  Setting Up ErpNext for School
+
+First we setup the parent Company with all the details and under that parent company we setup our school which further related to courses, program , room, student category etc.
+then our team divided the work for diferent modules.
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+**Date : 3-March-2022**
+##  Fee Module
+
+In the Fee module we have 
+
+- Fee 
+- Fee Structure 
+- Fee Schedule
+- Fee Components 
+- Fee Category 
+
+### Fee 
+
+In the Fee section we can create a fee for an Individual student one by one
+We have to enter the Student ,due date and we can aslo edit post time and date 
+to create a fee we need some of its components which are described below:
+
+- Prerequisites
+  - Student 
+  - Fee Structure
+  - Fee Category
+
+
+### Fee Structure
+
+In the fee Structure we can define the type of fee like for which class and category of students what kind of fee should be there
+
+In the fee structure we to provide program , student categor, acedamic year, acedamic term .
+The important part we have to define the fee category components which includes the different kind of fee. 
+
+### Fee Category
+
+In the Fee Category we simply add the Different Fee components like Tution fee ,Bus fee,Books etc.
+
+Fee Schedule
+
+- Prerequisites
+  - Fee Structure
+  - Student group
+
+
+**Fee schedule** is used to add bulk data for fee according to the Student groups and studnet category.
+it will divide the grand_total with each group of students.
+just go to fee schedule and click new fee schedule
+after creating schedule just click create fee button on top that will create fee for the students
+
+### Payment Entry 
+
+To make a payment 
+go to fee list  the select a unpaid status candidate 
+Now on the top there is a Tab name Create in which we can select make payment and fill the parameters the then submit.
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
