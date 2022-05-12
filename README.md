@@ -568,8 +568,8 @@ Added bootstrap carousel in hero section using section based on custom HTML.
 1. Landing Page - Configure the default landing page of your website by setting the Home Page field to the route of that page. You can put any route here including standard routes like home, about, contact, login, all-products, and blog.
 2. Website Theme - We can also create custom website theme for web pages in erpnext.
 3. Brand -
-  - Brand Logo - We can set the brand logo for your website in this section. Upload the Brand Image first and then click on "Set Banner from Image"         button. It will generate a Banner HTML with your uploaded logo.  
-  - Favicon - We can also set the favicon of your website in this section. It appears on the left side of the browser tab. 
+   - Brand Logo - We can set the brand logo for your website in this section. Upload the Brand Image first and then click on "Set Banner from Image"         button. It will generate a Banner HTML with your uploaded logo.  
+   - Favicon - We can also set the favicon of your website in this section. It appears on the left side of the browser tab. 
 4. Top Bar - We can customize the menu items in the navbar of your website from the Top Bar section.
 5. Banner - We can add a persistent banner to the website which will be shown above the navbar on all web pages.
 6. Footer - We can add address information and categorized links to your footer in the Footer section. 
@@ -632,27 +632,31 @@ Explored the navbar and created new webpages for navbar elements and also added 
 More sections to the webpage by adding more rows in the Page Building Blocks table. 
 
 #### Adding web templates in web page builder
- I explored different web templates that can be used to create webpage more attractive and implemented it on webpages and added content according to the  requirments.
+Explored different web templates that can be used to create webpage more attractive and implemented it on webpages and added content according to the  requirments. For example I added section with collapsed content , cards , slider, hero slider,  hero with right image. There are many more web templates that can be used to build beautiful websites.
 
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 11-March-2022**
-##  Worked with website module in erpnext
+##  Explored more features in website module
+Added navbar elements like department, explore and then added dropdown option. Under department dropdown added college departments like applied science, computer science, information technology, mechnical and production engineering, electrical engineering, civil engineering. And under explore added courses explored created section with collapsed content. 
 
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 
 **Date : 12-March-2022**
-##  Worked with website module in erpnext
+##  Understanding the structure of student module in erpnext
+The Student document will hold all the data of any Student in your Academy like their Personal Information, Photo, Date of Birth, Address, etc.
+In student module we have different doctypes like student group, student attendence, programs, classes. I added the data in these doctypes so that I can understand the structure of module properly.
 
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 
 **Date : 14-March-2022**
-##  Worked with website module in erpnext
+##  Understanding the structure of student module in erpnext
+For enrolling the student to a specific class we need to first enroll the student in the specific program using program enrollment tool then under program we can add the courses that come under the specific program. After adding the courses in the program we can further add topics under specific course. 
 
 <br>
  
@@ -672,7 +676,23 @@ More sections to the webpage by adding more rows in the Page Building Blocks tab
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 17-March-2022**
-##  Worked with website module in erpnext
+## Learned Github
+
+So being a part of a developer team one must need to Know Github in order to have a seamless conversation , information and code can be shared easily.
+Give them about the introduction about github 
+the basic github commands
+- git init - to initialize a repository 
+- git add . to add the whole files and folder 
+- git add filename.extension to add the  specific file 
+- git commit -m "Your Message" to commit the changes 
+- git remote add origin git URL
+- git push -u origin [branch name]
+- git stash clear	 -to clear all stashed enteries
+- git checkout branch_name  move across beanches of specifi reporsitory 
+- git status to check the curent status of the files
+- git pull origin [branch name] pull changes from the remote url
+- form Documentation [Click here](https://github.com/joshnh/Git-Commands) 
+
 
 <br>
  
@@ -709,29 +729,30 @@ More sections to the webpage by adding more rows in the Page Building Blocks tab
 <!----------------------------------------------------------------------------------------------------------------------------->
 
 **Date : 25-March-2022**
-##  Worked with website module in erpnext
+## Assessment Module
+Assessment procedure to evaluate the students' curricular performance in a period.
+Following are the Pre-requists required for the generation of assessment report.
+- Assessment Criteria
+- Assessment Group
+- Grading Scale
 
-<br>
- 
-<!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 26-March-2022**
-##  Worked with website module in erpnext
+##  Assessment Criteria and Assessment Group
 
-<br>
- 
-<!----------------------------------------------------------------------------------------------------------------------------->
+Marks earned are entered based on the ***Assessment Criteria***. For example, if the assessment was conducted for science subjects, then you can evaluate Student in Science on various criteria like Theory and Practical etc.
+In ***Assessment Group*** if we wish to conduct an assessment for each Academic Term within an Academic Year e.g MST1,MST2 and ESE then these were the assessment groups.
+
 **Date : 28-March-2022**
-##  Worked with website module in erpnext
+##  Assessment Plan and Assessment Result
+An Assessment Plan is a schedule to conduct the examination/assessment of a particular course for a group of students studying that course in an on-going academic term.
+Prerequisites:
+- Student Group
+- Course
+- Program
+- Assessment Group
+- Grading Scale
 
-<br>
- 
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 29-March-2022**
-##  Worked with website module in erpnext
-
-<br>
- 
-<!----------------------------------------------------------------------------------------------------------------------------->
+***Assessment Result*** is a log of marks/grades earned by the student for specific Assessment.An Assessment Result is created in the backend based on the marks entered in the Assessment Result Tool.
 **Date : 30-March-2022**
 ##  Worked with website module in erpnext
 
