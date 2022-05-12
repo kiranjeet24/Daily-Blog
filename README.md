@@ -475,7 +475,6 @@ In this Domain We have
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
-
 **Date : 2-March-2022**
 ##  Setting Up ErpNext for School
 
@@ -539,6 +538,245 @@ Now on the top there is a Tab name Create in which we can select make payment an
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 4-March-2022**
+##  Worked with website module in erpnext
+Inside ERPNext! Using website module, we can:
 
+- Create Web Pages
+- Write Blogs
+- Publish the Product Catalog using the Item master
+- Allow users to buy your products using the Shopping Cart
+- You need to use html\css to make better custom website designs. The good part is that once this is set up, you can add and edit content, blogs, and     products directly from your ERPNext account.
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 4-March-2022**
+##  Setting Up homepage
+#### Hero Section in Homepage
+There are three ways in which you can customize the way the Hero Section looks:
+- Tag Line and Description (Default).
+- Homepage Slideshow.
+- Custom Hero Section.
+#### Customizing Hero Section
+Added bootstrap carousel in hero section using section based on custom HTML.
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 5-March-2022**
+##  Explored Website Settings
+1. Landing Page - Configure the default landing page of your website by setting the Home Page field to the route of that page. You can put any route here including standard routes like home, about, contact, login, all-products, and blog.
+2. Website Theme - We can also create custom website theme for web pages in erpnext.
+3. Brand -
+  - Brand Logo - We can set the brand logo for your website in this section. Upload the Brand Image first and then click on "Set Banner from Image"         button. It will generate a Banner HTML with your uploaded logo.  
+  - Favicon - We can also set the favicon of your website in this section. It appears on the left side of the browser tab. 
+4. Top Bar - We can customize the menu items in the navbar of your website from the Top Bar section.
+5. Banner - We can add a persistent banner to the website which will be shown above the navbar on all web pages.
+6. Footer - We can add address information and categorized links to your footer in the Footer section. 
+7. HTML Header - We can use this section to set meta tags across all of web pages. A common use case is to add Google site verification tags.
+8. Chat - We can enable website visitor chat on your website in the Chat section.
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date :7-March-2022**
+##  Adding web pages in erpnext
+#### Creating webpage
+1. Go to the Web Page list and click on New.
+2. Enter a Title and add content in Main Section. The route will auto generated but you can change it.
+3. Click on Save.
+4. The web page will be published only when Published is ticked.
+5. View the Web Page by clicking on See on Website in the side bar.
+ 
+#### Added web pages in erpnext
+Explored the navbar and created new webpages for navbar elements and also added new navbar elements as the requirement based on education website.
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 8-March-2022**
+##  Explored Web Themes
+#### Creating a Website Theme
+1. Go to the Website Theme list and click on New.
+2. Enter a Theme Name.
+3. Customize your theme.
+4. Click on Save.
+
+#### Features for Website theme
+1.  Theme Configuration - The section "Theme Configuration" is there for bootstrapping a basic theme. Here you can choose your color scheme, font and       button styles.
+2.  Stylesheet- Using SCSS and Bootstrap 4 theming, we can manually write custom SCSS.
+3.  Custom JS - We can also write custom JavaScript that will run when your theme is applied.
+ 
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 9-March-2022**
+##  Worked with webpage builder
+#### Creating a page using Page Builder
+1. Followed the steps to create a Web Page.
+2. Enable full width by ticking the "Full Width" checkbox.
+3. Select Content Type as Page Builder.
+4. Click on Add Row in the Page Building Blocks Table.
+5. Select a Web Template.
+6. Click on the Edit Values button.
+7. Enter values in the dialog and click on Submit.
+8. Click on Save.
+9. The web page will be published only when Published is ticked.
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 10-March-2022**
+##  Adding sections in webpage
+More sections to the webpage by adding more rows in the Page Building Blocks table. 
+
+#### Adding web templates in web page builder
+ I explored different web templates that can be used to create webpage more attractive and implemented it on webpages and added content according to the  requirments.
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 11-March-2022**
+##  Worked with website module in erpnext
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+**Date : 12-March-2022**
+##  Worked with website module in erpnext
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+**Date : 14-March-2022**
+##  Worked with website module in erpnext
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+**Date : 15-March-2022**
+##  Worked with website module in erpnext
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+**Date : 16-March-2022**
+##  Worked with website module in erpnext
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 17-March-2022**
+##  Worked with website module in erpnext
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 19-March-2022**
+##  Worked with website module in erpnext
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 21-March-2022**
+##  Worked with website module in erpnext
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 22-March-2022**
+##  Worked with website module in erpnext
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 23-March-2022**
+##  Worked with website module in erpnext
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 24-March-2022**
+##  Worked with website module in erpnext
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+**Date : 25-March-2022**
+##  Worked with website module in erpnext
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 26-March-2022**
+##  Worked with website module in erpnext
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 28-March-2022**
+##  Worked with website module in erpnext
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 29-March-2022**
+##  Worked with website module in erpnext
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 30-March-2022**
+##  Worked with website module in erpnext
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 2-April-2022**
+##  Worked with website module in erpnext
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 3-April-2022**
+##  Worked with website module in erpnext
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 5-April-2022**
+##  Worked with website module in erpnext
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 6-April-2022**
+##  Worked with website module in erpnext
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 7-April-2022**
+##  Worked with website module in erpnext
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 8-April-2022**
+##  Worked with website module in erpnext
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 9-April-2022**
+##  Worked with website module in erpnext
+
+<br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
