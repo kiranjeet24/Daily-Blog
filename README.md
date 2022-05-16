@@ -655,22 +655,47 @@ In student module we have different doctypes like student group, student attende
 <!----------------------------------------------------------------------------------------------------------------------------->
 
 **Date : 14-March-2022**
-##  Understanding the structure of student module in erpnext
+## Structure of student module in erpnext
 For enrolling the student to a specific class we need to first enroll the student in the specific program using program enrollment tool then under program we can add the courses that come under the specific program. After adding the courses in the program we can further add topics under specific course. 
+Once the course has been created, the following documents can be created from the course, which will later be linked to the course.
+- Program
+- Student Group
+- Course Schedule
+- Assessment Plan
 
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 
 **Date : 15-March-2022**
-##  Worked with website module in erpnext
+##  Worked on SSH Shell
+What is ssh?
+SSH, also known as Secure Shell or Secure Socket Shell, is a network protocol that gives users, particularly system administrators, a secure way to access a computer over an unsecured network.
+
+Logined to Server,Trying to install ldap on server.
+Apply different permission related queries on database for different user.
+
 
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 
 **Date : 16-March-2022**
-##  Worked with website module in erpnext
+##  Creating student groups in ERPnext
+1. Go to Student Group List and click on New.
+2. Group Based On: Select the basis on which you would like to create the student group. The three options available are:
+   - Batch: List of all the students from within a specific batch will be fetched in this case.
+   - Course: Lst of all the students who have enrolled for a specific course will be fetched in this case.
+   - Activity: You can select this option when you want to create a group of students for certain activities happening in the school.
+3. Student Group Name: Enter the name of the student group.
+4. Save
+
+Once the student group has been created and saved, the following can be created from the Student group: 
+1. Attendance
+2. Course Schedule
+3. Assessment Plan
+4. Update Email Group
+5. Newsletter
 
 <br>
  
@@ -698,32 +723,52 @@ the basic github commands
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 19-March-2022**
-##  Worked with website module in erpnext
+##  Understanding User permissions in Erpnext
+#### Adding Users
+There are two main types of users:
+- Website users: Customers, Suppliers, Students, etc., who have access only to the portal and not to any modules. 
+- System Users: People using ERPNext in the Company with access to modules, company data, etc.
 
+Setting User Permissions are particularly useful when you want to restrict based on:
+- Allowing user to access data belonging to one Company
+- Allowing user to access data related to a specific Customer or Territory
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 21-March-2022**
-##  Worked with website module in erpnext
+## Adding New role and Give Permission to new Users
 
+- When we got new user for allow them to create Library Management System we need to give them the access of doctype modules.
+- For this we go to doctype list and create new role where new user create doctype by can't delete doctype.
+- Similarly for Module we use select permission where user can select module but can't read module.
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 22-March-2022**
-##  Worked with website module in erpnext
+##  Adding User Permission
+- Go to the User Permissions list, click on New.
+- Select the user for which the rule has to be applied.
+- Select the type of document to be allowed (for example "Company").
+- Under For Value, select the specific item that you want to allow (the name of the "Company).
+- If you check 'Is Default', the value selected in 'For Value' will be used by default for any future transactions by this user. That is if company   'Gndec' is selected as 'For Value', this Company will be set as default for all future transactions by this user.
 
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 23-March-2022**
-##  Worked with website module in erpnext
+# Learning about how to import data in erpnext from csv file
+
+We can generate a csv template regarding ot a particular doctype and trhe we can add a particular data to ethe data type and then we can add the data in the abundace so it can save time.
 
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 24-March-2022**
-##  Worked with website module in erpnext
+## Arranging Student data
 
+- As there are large data of students in school we need to make it correct.
+- so we all divide work in team and understanding the concept of filter, concatinate etc. in excel.
+- First we export the required format of csv file then we edit the csv file provided by the school according to our need and import thr data to the server.
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
@@ -753,8 +798,10 @@ Prerequisites:
 - Grading Scale
 
 ***Assessment Result*** is a log of marks/grades earned by the student for specific Assessment.An Assessment Result is created in the backend based on the marks entered in the Assessment Result Tool.
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 30-March-2022**
-##  Worked with website module in erpnext
 
 <br>
  
