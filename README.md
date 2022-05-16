@@ -756,7 +756,7 @@ Setting User Permissions are particularly useful when you want to restrict based
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 23-March-2022**
-# Learning about how to import data in erpnext from csv file
+## Learning about how to import data in erpnext from csv file
 
 We can generate a csv template regarding ot a particular doctype and trhe we can add a particular data to ethe data type and then we can add the data in the abundace so it can save time.
 
