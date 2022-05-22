@@ -681,21 +681,8 @@ Apply different permission related queries on database for different user.
 <!----------------------------------------------------------------------------------------------------------------------------->
 
 **Date : 16-March-2022**
-##  Creating student groups in ERPnext
-1. Go to Student Group List and click on New.
-2. Group Based On: Select the basis on which you would like to create the student group. The three options available are:
-   - Batch: List of all the students from within a specific batch will be fetched in this case.
-   - Course: Lst of all the students who have enrolled for a specific course will be fetched in this case.
-   - Activity: You can select this option when you want to create a group of students for certain activities happening in the school.
-3. Student Group Name: Enter the name of the student group.
-4. Save
-
-Once the student group has been created and saved, the following can be created from the Student group: 
-1. Attendance
-2. Course Schedule
-3. Assessment Plan
-4. Update Email Group
-5. Newsletter
+## Creating academic manager role
+ we were told to create an academic manager role that can add a student group and assign instructor to the student group also tocreate a course schedule. So we (I, sehjalpreet, pooja) have created new role academic managerin role doctype and according to requirement for academic manager wehave given access to various doctypes through role permission manager
 
 <br>
  
@@ -745,13 +732,11 @@ Setting User Permissions are particularly useful when you want to restrict based
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 22-March-2022**
-##  Adding User Permission
-- Go to the User Permissions list, click on New.
-- Select the user for which the rule has to be applied.
-- Select the type of document to be allowed (for example "Company").
-- Under For Value, select the specific item that you want to allow (the name of the "Company).
-- If you check 'Is Default', the value selected in 'For Value' will be used by default for any future transactions by this user. That is if company   'Gndec' is selected as 'For Value', this Company will be set as default for all future transactions by this user.
-
+## Installing new Erpnext on server
+- First we install the new instance of  frappe framework on the Server then install erpnext with education domain.
+- After this we are collecting students areound 5000 and teachers (114) data from Nankana Sahib Public School.
+- Arranging data according to doctype in erpnext.
+- Setting up the school.  
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
@@ -802,49 +787,207 @@ Prerequisites:
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 30-March-2022**
-
+## Adding New role and Give Permission to new Users
+- When we got new user for allow them to create Library Management System we need to give them the access of doctype modules.
+- For this we go to doctype list and create new role where new user create doctype by can't delete doctype.
+- Similarly for Module we use select permission where user can select module but can't read module.
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 1-April-2022**
+## Working with Client Script in Form
+Client Script is script in which we add some action on form so that we validate data or do other function.
+- Webform script is which is done in webform while creating new webform.
+- For Reference we use Web form Scripting Documentation [Click here](https://frappeframework.com/docs/v13/user/en/api/form)
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 2-April-2022**
-##  Worked with website module in erpnext
-
-<br>
- 
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 3-April-2022**
-##  Worked with website module in erpnext
-
+## User Permissions
+A role is a set of permissions assigned to a user so that they can access the documents they need to. For example, a student  will need access to his/her/it courses but will not have access to read or write them.
+If in case we need to create a user with some specific permissions we can give it through user permissions.
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 5-April-2022**
-##  Worked with website module in erpnext
+## Creating Library Management System
+As per official documentation created Library Management App.
+ - Install app on site then creating doctype.
+ - Use Features like Naming Series, Permission Rules. 
+ - Learn Controller methods, Doctype Features, Form Scripts. 
+ - Adding Web view for preview Articles on web.
 
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 6-April-2022**
-##  Worked with website module in erpnext
-
+## Working on learning management system in education module
+In learning management system we can publish the institute programs on the website. Programs can contain rich text articles, videos, and even quizzes. The progress of individual students can be tracked through ERPNext as well as the portal.
+#### Enabling LMS
+To enable LMS we first go to education module then click the settings and open education settings. Here, there is a checkbox using which the LMS can be enabled. 
+The portal is hosted on the /lms route.Here all the programs are shown in the form of cards. Each card is clickable and navigates to the corresponding program/course/topic/content.
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 7-April-2022**
-##  Worked with website module in erpnext
-
+##  Setting up Learning management system
+- To make the Program accessible on the portal, we tick the 'Is Published' checkbox in the Program form. We can also tick the 'Is Featured' checkbox, which will show     it on the portal landing page. The portal will automatically fetch the courses from the course table in the program.
+- On the portal, for students to be able to view the programs on the portal, a program has to be marked as Published. On the portal students will be able to see only     those courses they are enrolled to or they are allowed to enroll into.
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 8-April-2022**
-##  Worked with website module in erpnext
+##  Adding images in lms portal
+To make lms portal look more attractive added images for each particular class or program in the desk. The images added are automatically visible on published program cards on the lms website.
 
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 9-April-2022**
-##  Worked with website module in erpnext
+## Trying to create Daily Dairy
+
+- For this first we create a doctype.
+- Trying to add permission in doctype so that only student group can access these Dairy.
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 10-April-2022**
+##  Adding User Permission
+- Go to the User Permissions list, click on New.
+- Select the user for which the rule has to be applied.
+- Select the type of document to be allowed (for example "Company").
+- Under For Value, select the specific item that you want to allow (the name of the "Company).
+- If you check 'Is Default', the value selected in 'For Value' will be used by default for any future transactions by this user. That is if company   'Gndec' is selected as 'For Value', this Company will be set as default for all future transactions by this user.
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 11-April-2022**
+##  Working on hiding data company wise
+I tested by adding company field in student and course doctype.
+Then I added the company name to the course and student and also added a company filter in student and course doctype.
+And created a new user with NSPS company and that user is able to see only his company courses and students.
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 12-April-2022**
+##  Creating student groups in ERPnext
+1. Go to Student Group List and click on New.
+2. Group Based On: Select the basis on which you would like to create the student group. The three options available are:
+   - Batch: List of all the students from within a specific batch will be fetched in this case.
+   - Course: Lst of all the students who have enrolled for a specific course will be fetched in this case.
+   - Activity: You can select this option when you want to create a group of students for certain activities happening in the school.
+3. Student Group Name: Enter the name of the student group.
+4. Save
+
+Once the student group has been created and saved, the following can be created from the Student group: 
+1. Attendance
+2. Course Schedule
+3. Assessment Plan
+4. Update Email Group
+5. Newsletter
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 13-April-2022**
+##  Installing nextcloud on local host
+Today first I installed MySQL, apache2 and php. Then I installed open source software next cloud and created admin user. I get to know that nextcloud is a platform where we can manage all documents and files we can download and upload view photos and videos and has many more features that can be explored.
 
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 14-April-2022**
+## 
+
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 15-April-2022**
+## Presentation of Nankana Sahib Public School Project
+Today we had a meeting with Satinder Sir and a teacher from Nankana Sahib Public School. In today's meetings we all presented what we have done till now. We showed them the whole workflow to add a student. For which first we need to add a student applicant and explained that there are two methods for this one is online by using web form and another is offline after the application is accepted we can enroll them in the programs by single-2 enrollment of every student and by using the program enrollment tool and we showed them the lms interface of student how student is going to access the programs and courses and quizzes.
+After student section we showed them the whole working of instructor how instructor can add content like articles, videos and quizzes in lms, mark the attendance of students etc. After Instructor we presented the HR module how to generate payrolls, salary slips, attendance of employees etc.
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 16-April-2022**
+##  Working on daily diary
+
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 17-April-2022**
+##  Working on daily diary
+
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 18-April-2022**
+##  Working on daily diary
+
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 19-April-2022**
+##  Working on daily diary
+
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 21-April-2022**
+##  Working on daily diary
+
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 22-April-2022**
+##  Working on daily diary
+
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 23-April-2022**
+##  Working on daily diary
+
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 25-April-2022**
+##  Working on daily diary
+
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 26-April-2022**
+##  Working on daily diary
+
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 27-April-2022**
+##  Working on daily diary
+
+
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 28-April-2022**
+## New Fee requirment
+
+- First we Create Fee Categories Like Development Fee, Tutuion Fee, Transportation fee.
+- Creating Fee Structure For Different Classes and it depends on siblings fee.
+- Like If a Student has one sibling than Tution fees would be 50% discount, If there are two Siblings than Tution Fee would be 25%.
+- Transportation Fee depends on various routes eg Bus Fee for Route1 : 500/- than Fee for Route2 : 400/-.
+<br>
+ 
+<!----------------------------------------------------------------------------------------------------------------------------->
+
