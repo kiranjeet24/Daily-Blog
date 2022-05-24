@@ -896,8 +896,8 @@ Today first I installed MySQL, apache2 and php. Then I installed open source sof
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 14-April-2022**
-## 
-
+## Exploring nextcloud
+Nextcloud is an open-source secure PHP-based collaboration platform designed for file sharing synchronization. It's a safe and flexible solution that allows users to share and synchronize their files with a Nextcloud server.
 
 <br>
  
@@ -911,37 +911,48 @@ After student section we showed them the whole working of instructor how instruc
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 16-April-2022**
-##  Working on daily diary
-
-
+## Learning Human Resource Module
+The Human Resources (HR) module covers the processes related to the HR department of a company. It maintains a complete employee database including contact information, salary details, attendance, performance evaluation, leaves, and appraisal records.The most important feature here is processing the payroll by using Payroll Entry to generate Salary Slips. Most countries have complex tax rules stating which expenses the company can make on behalf of its Employees.
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 17-April-2022**
-##  Working on daily diary
+## Learning Permission for Human Resource & Payroll
 
-
+- For Finding permission rule of HR Role we create a user in Erpnext.
+- Then assign HR User role to new user and find what permissions are available.
+- After this we use HR manager Role and learn its role for Human Resource & Payroll.
+- We find that HR manager has more power than HR user in some case like to delete and cancel records etc. 
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 18-April-2022**
-##  Working on daily diary
+## Working on Daily Dairy as per new specification
 
-
+- First we create new app named Daily Dairy.
+- Create new doctype under new app Daily Dairy Class1.
+- Creating fields and write some code for add fields automatically.
+- Now we are working on permission how to show it to only specific group.
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 19-April-2022**
-##  Working on daily diary
+## Creating Daily Diary module in Notification App
 
+- Installing Notification app on local system.
+- Creating module named Daily Diary save it on notification app.
+- Then push app on other team-mate github repository. 
 
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 21-April-2022**
-##  Working on daily diary
+## Adding Filters on doctype as per requirement
 
-
+- As per requirement changes for achieve this we add filter in list-view like class-wise, subject-wise, date-wise filter.
+- For creating filters on desk we need to go to Doctype.
+- On click edit we need check option In List View, In Standard Filter.
+- Then on save changes filters are available on desk list-view of doctype.
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
