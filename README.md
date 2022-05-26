@@ -1012,3 +1012,159 @@ Installed the php, phpmyadmin and downloaded the github repository and trying to
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
+
+**Date : 02-May-2022**
+## Hackathon day 1
+### Roles and flow for Parent Comapany:-
+
+***Director***:- Director will have all permissions like fees, salary,
+accounts , total gain etc but with read only access.
+
+***Accountant***:- will have permissions to see all the account information
+of trust, nsps, gndec.     Accountant will have read, write access to
+create the fee and salaries of the employee and also can create the
+fee report and salary report.
+
+***HR***:- HR will have permission to create the users and make them
+employees, leave allocation, holiday list, salary of employee.
+Superintendent
+
+### Roles and flow for Child Comapany:-
+
+***Principal***:- Will have only read only access to all the education
+domain related information and HR related information.
+
+***Accountants***:- 1 For students fee and 1 for salaries of employees.
+Teaching Incharge:-  Will do all the tasks of academic user like
+course scheduling etc.
+
+***HR***:- will create employees and instructors only for Nankana sahib
+Public School, leave allocation, salary of employees etc. We need to
+show all the reports like employees attendance report, salary report,
+leave report etc to the HR..
+
+***Instructors***:- will have access to student attendance, quiz, videos,
+article, Diary, Student list etc.
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+**Date : 03-May-2022**
+## Hackathon day 2
+
+***Students***:- will have access of only LMS and on lms they will have
+access of programs, Courses, Quizzes, Videos, Articles, daily diary
+and attendance.
+
+***Accountant***:- will create the salaries of employees and fees of
+students, will generate the balance sheet.
+
+We need to generate all the reports and graphs for necessary
+information for each role.
+
+Inventory Management
+
+Today, We created Director user of NSET, Superintendent of NSET,
+Principal user of NSPS and HR user of NSPS on erp server and gave them
+all the required permissions. And same roles are created on gne11.GNE,
+whose credentials are shared in other mail. You can check that roles
+with given credentials. Also we learn about Salary Structure and
+Salary Component of employees. In meeting with Harpreet sir, we learn
+about PF, Taxes, Funds, Earnings and Deductions etc. We will explore
+it and implement on gne11.GNE.
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+**Date : 5 May-2022**
+## Creating Presentation in Reveal.js
+Created Presentation for the Whole Project To so that we can present our work to the trusties so with the team we created a presentation  whcih contains all the infomation related to the erp Syatem which deals with the all kind of accounting, maintaing all students,staff and employees and pushed on github.
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 6 May-2022**
+## Understanding the fee structure
+Implementing the fee module on local host to understand the fee structure. 
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 7 May-2022**
+##  Creating fee structure for NSPS
+Added fee structures for all classes in NSPS and also added new programs with respect to NSPS fee structure. Added fee structure for all the classes from Nursery to 12th.
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 9 May-2022**
+##  New requirements for fee structure
+Task given to add discounts in the fees of student on the basis of siblings. Trying to understand the logic. 
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 10 May-2022**
+##  Exploring HR module in erpnext
+Working on HR module first we need to create new employees. Fill the details related to employees like educational qualification, designation, personal details, salary details, joining details, etc.  
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 11-May-2022**
+## Learn Different Salary component for Employee Salary
+
+- Basic Pay of employee as per college pay scale.
+- Add 5% Interim Relief in Basic pay.
+- Adding Dearness allowance 142% in Basic Pay.
+- Medical Allowance,CCA,PF(10%),HRA.
+- These all are Earning in salary.
+- Then we add Deduction component like PF(20%),Development tax, GI, SML, SMAF.
+- By calculating all Earning & Deduction, we get Net Paid Amount. 
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 12-May-2022**
+ ## Creating Salaries
+
+- First we create salary component which are fixed these are declared in Salary Component.
+- Next Create Salary Structure in which we group all Salary Component which are earning and deduction components.
+- Setting up formula on Basic Pay like calculate IR(5%), ADA(142%) etc.
+- After Successfully creating salary structure assigning it to employee where we define the Basic pay of Employee.
+- At last in Salary Slip we select employee to whom we assign salary then salary structure automatically fetched and calculate base salary.    
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 13-May-2022**
+## Understand the Salary Structure of different employees
+
+- We are going to Accounts Department for understanding Salary structure of different employees.
+- Understand their requirement related to salary like for different employee, there should be different grade pay.
+- So they want they have customize option to add grade pay or not.
+- They want also seprate record file for provident fund record of employees, provident fund loan record file.
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 14-May-2022**
+## Learning Salary Component for New Requirement
+
+- First when we change our company from NSPS to GNDEC.
+- Then all the Salary Components of employee are visisble in Salary Components but are not shown in Salary structure.
+- After that we are finding some other solution so that we can use same structure in two companies. 
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 16-May-2022**
+## Creating Salary Component
+
+- According to new requirement different category employees have different components.
+- Now same salary component can have different value for two employees like SML for accounts employee and teaching employee are different.
+- We are creating all Salary Components without any value so that we can modifying it later in Salary Structure.
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 17-May-2022**
+<h3 align='center'>Creating Salary Structure</h3>
+
+- After Creating all Salary components which are combined for all the employees.
+- Now we are creating Salary Structure which is the combination of Salary Components in which we list all Earning and deduction components.
+- In this we set formula that if basic pay is assigned to employee during the assignment of Salary Structure and Grade pay is added to employee when generating Salary Slip only then all the Earning and deduction components are calculated.
+- The calculation is done when we save the salary slip in draft state after submit we can't modify it but in draft state we can made any changes at any time like adding or deleting components.
+<br>
+<!----------------------------------------------------------------------------------------------------------------------------->
