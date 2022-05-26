@@ -957,36 +957,36 @@ The Human Resources (HR) module covers the processes related to the HR departmen
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 22-April-2022**
-##  Working on daily diary
-
+##  Notes in erpnext
+Notes is a tool that can be used for Personal Note Taking purposes. We can use it to save your lists, frequently used passwords, terms, and conditions, or any other document which needs to be shared or kept for reference.
 
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 23-April-2022**
-##  Working on daily diary
-
+##  Working with notes
+We can select whether or not you want this particular Note to be Public. Making a Note public will allow you to share it across Users in your ERPNext account.Once we enable making a Note Public, there will be another checkbox, saying 'Notify users with a popup when they log in'.We can also select if we wish to give some specific users, the right to read, write or share your note. This can be done from the 'Share' option in the left sidebar.
 
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 25-April-2022**
-##  Working on daily diary
-
-
+##  Notification for Notes 
+Enabling this property would ensure that whenever any User logs into their account, there will be a Pop-Up notification for the note.
+Created new note and tested it by login through different users.
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 26-April-2022**
-##  Working on daily diary
-
+## Fetch a Field Value from a Document
+To fetch a field value of one doctype in another doctype we need to open doctype list and open the doctype to be customised then edit the field where we want to fetch the value and write the doctype_name.field_name in fetch from. 
 
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 27-April-2022**
-##  Working on daily diary
-
+##  Working with yaadein repo
+Installed the php, phpmyadmin and downloaded the github repository and trying to run the code.
 
 <br>
  
@@ -1000,4 +1000,15 @@ The Human Resources (HR) module covers the processes related to the HR departmen
 - Transportation Fee depends on various routes eg Bus Fee for Route1 : 500/- than Fee for Route2 : 400/-.
 <br>
  
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 29-Apr-2022**
+## Implementing Fee on local server
+
+- First we import data like Program, student, courses.
+- Creating Fee category as per requirement Development Fee, Tution Fee, Transporatation Fee.
+- Finding a way how to link siblings of same school using minimal customization.
+- We set up students who have siblings but when we select option siblings studying in the same school then we are able to select students from available students but the program is not fetched.
+- Along with this We find the received income cost center is also set in schedule. We can find all the income in the Fee cost center.
+<br>
+
 <!----------------------------------------------------------------------------------------------------------------------------->
