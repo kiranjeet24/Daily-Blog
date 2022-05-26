@@ -1160,7 +1160,7 @@ Working on HR module first we need to create new employees. Fill the details rel
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 17-May-2022**
-<h3 align='center'>Creating Salary Structure</h3>
+## Creating Salary Structure
 
 - After Creating all Salary components which are combined for all the employees.
 - Now we are creating Salary Structure which is the combination of Salary Components in which we list all Earning and deduction components.
