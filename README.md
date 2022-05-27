@@ -1173,27 +1173,37 @@ Working on HR module first we need to create new employees. Fill the details rel
 **Date : 18-May-2022**
 ## Display General ledger entry for Fee Record
 
+- Goto Accounting Module then goto General Ledger section.
+- Select your Company, Select from date, to date for which you want to show Entries.
+- Select Group by Account, Group by Party, Group by Voucher view.
+- Now you are able to view all the record here you have all debit, credit and balance record.  
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 19-May-2022**
 ## Collecting Fees in one Fee Head
 
+- For creating new Fee collection head Create new Account.
+- Add account name, Select Company name, Currency type.
+- Select Balance type (Debit or Credit), Select Parent account type (Income account or Expenses account).
+- After Creating head verify it in Company Cost center, while creating new Fee slip under Accounting Section select income account in which you want to add new fees.
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 21-May-2022**
 ## Displaying Fees different head-wise like tution fee, Development fee
 
+ Goto Fee list under Education domain.
+- Under list view option select report view, Select Add group option here select Fee Category under Fee Component
+- Then Add sum Filter and in third field Select Amount or grand total or outstanding.
+- Now you are able to see all fee collected head wise like Tution Fee, Development Fee, Bus Fee.
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 23-May-2022**
 ## Generating School Leaving Certificate
 
-- Created new print format named school leaving certificate in student doctype. 
-- Added school logo, custom html, school leaving details in the certificate. 
-
+For creating new school leaving certificate format goto print format. For Adding new print format select student doctype for which you want to create school leaving certificate, Select education module select format as standard format or not we use 'NO' option because this format is only used when we want to generate school leaving certificate. Use custom css for designing logo of company for fetching student name we use doc.first_name. For fetching class name we use frappe function, frappe.db.get_value('Program Enrollment', doc.student, 'program'). 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
