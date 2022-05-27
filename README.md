@@ -1168,6 +1168,7 @@ Working on HR module first we need to create new employees. Fill the details rel
 - The calculation is done when we save the salary slip in draft state after submit we can't modify it but in draft state we can made any changes at any time like adding or deleting components.
 
 <br>
+
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 18-May-2022**
 ## Display General ledger entry for Fee Record
