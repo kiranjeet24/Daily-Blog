@@ -1168,3 +1168,69 @@ Working on HR module first we need to create new employees. Fill the details rel
 - The calculation is done when we save the salary slip in draft state after submit we can't modify it but in draft state we can made any changes at any time like adding or deleting components.
 <br>
 <!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 18-May-2022**
+## Display General ledger entry for Fee Record
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 19-May-2022**
+## Collecting Fees in one Fee Head
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 21-May-2022**
+## Displaying Fees different head-wise like tution fee, Development fee
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 23-May-2022**
+## Generating School Leaving Certificate
+
+- Created new print format named school leaving certificate in student doctype. 
+- Added school logo, custom html, school leaving details in the certificate. 
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 24-May-2022**
+## Sending Messages to specific Students using ERPNext
+
+- Creating New Email Group Add Subscribers to whom we want to send emails.
+- We can them in a bluk by writing their emails.
+- After adding subscriber Create New newsletter in which we have to add email group which is created.
+- Then add Subject and Message also we have option to test this message by sending to only one specific user.
+- Save the newsletter we have another option schedule sending mail automatically.  
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 25-May-2022**
+## Creating Collapse view without using ErpNext Desk using Bootstrap
+
+- First we create collapse multiple tab effect with bootstrap and html.
+- In which we use bootstrap classes with html tags.
+- Then our next task is to put in erpnext directory and run it with jinja templating.
+- For this we remove all html starting tags and bootstrap cdn links because frappe also uses Bootstrap-4 classes.
+- Replace Html starting tags with jinja starting template and trying to fetch data from database.
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 26-May-2022**
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 27-May-2022**
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 28-May-2022**
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 30-May-2022**
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 31-May-2022**
+
+<br>
