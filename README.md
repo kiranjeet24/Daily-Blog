@@ -831,8 +831,8 @@ The portal is hosted on the /lms route.Here all the programs are shown in the fo
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 7-April-2022**
 ##  Setting up Learning management system
-- To make the Program accessible on the portal, we tick the 'Is Published' checkbox in the Program form. We can also tick the 'Is Featured' checkbox, which will show     it on the portal landing page. The portal will automatically fetch the courses from the course table in the program.
-- On the portal, for students to be able to view the programs on the portal, a program has to be marked as Published. On the portal students will be able to see only     those courses they are enrolled to or they are allowed to enroll into.
+- To make the Program accessible on the portal, we tick the 'Is Published' checkbox in the Program form. We can also tick the 'Is Featured' checkbox, which will show it on the portal landing page. The portal will automatically fetch the courses from the course table in the program.
+- On the portal, for students to be able to view the programs on the portal, a program has to be marked as Published. On the portal students will be able to see only those courses they are enrolled to or they are allowed to enroll into.
 <br>
  
 <!----------------------------------------------------------------------------------------------------------------------------->
@@ -1166,15 +1166,18 @@ Working on HR module first we need to create new employees. Fill the details rel
 - Now we are creating Salary Structure which is the combination of Salary Components in which we list all Earning and deduction components.
 - In this we set formula that if basic pay is assigned to employee during the assignment of Salary Structure and Grade pay is added to employee when generating Salary Slip only then all the Earning and deduction components are calculated.
 - The calculation is done when we save the salary slip in draft state after submit we can't modify it but in draft state we can made any changes at any time like adding or deleting components.
+
 <br>
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 18-May-2022**
 ## Display General ledger entry for Fee Record
+
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 19-May-2022**
 ## Collecting Fees in one Fee Head
+
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
@@ -1201,6 +1204,7 @@ Working on HR module first we need to create new employees. Fill the details rel
 - After adding subscriber Create New newsletter in which we have to add email group which is created.
 - Then add Subject and Message also we have option to test this message by sending to only one specific user.
 - Save the newsletter we have another option schedule sending mail automatically.  
+
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
@@ -1234,3 +1238,4 @@ Working on HR module first we need to create new employees. Fill the details rel
 **Date : 31-May-2022**
 
 <br>
+<!----------------------------------------------------------------------------------------------------------------------------->
