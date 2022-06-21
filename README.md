@@ -870,7 +870,7 @@ And created a new user with NSPS company and that user is able to see only his c
  
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 12-April-2022**
-##  Creating student groups in ERPnext
+##  Creating student groups in erpGuru
 1. Go to Student Group List and click on New.
 2. Group Based On: Select the basis on which you would like to create the student group. The three options available are:
    - Batch: List of all the students from within a specific batch will be fetched in this case.
